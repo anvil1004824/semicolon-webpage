@@ -1,9 +1,18 @@
+@import "reset.css";
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .video-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 45vw;
+  width: 80vw;
+  position: relative;
 }
 @keyframes popUp {
   from {
@@ -11,13 +20,13 @@
     aspect-ratio: 16/9;
   }
   to {
-    width: 90vw;
+    width: 80vw;
     aspect-ratio: 16/9;
   }
 }
 @keyframes popDown {
   from {
-    width: 90vw;
+    width: 80vw;
     aspect-ratio: 16/9;
   }
   to {
@@ -38,10 +47,10 @@
   position: relative;
 }
 .pop-up {
-  animation: popUp 1s ease-in-out forwards;
+  animation: popUp 0.5s ease-in-out forwards;
 }
 .pop-down {
-  animation: popDown 1s ease-in-out forwards;
+  animation: popDown 0.5s ease-in-out forwards;
 }
 #cancel {
   height: 30px;
@@ -50,8 +59,8 @@
   background-color: black;
   color: white;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 1vh;
+  right: 1vw;
   opacity: 0;
   display: flex;
   align-items: center;
