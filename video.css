@@ -4,7 +4,6 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  position: relative;
 }
 @keyframes popUp {
   from {
@@ -36,6 +35,7 @@
 }
 #semicolon-video {
   width: 300px;
+  position: relative;
 }
 .pop-up {
   animation: popUp 1s ease-in-out forwards;
@@ -50,8 +50,8 @@
   background-color: black;
   color: white;
   position: absolute;
-  top: 125px;
-  right: 55px;
+  top: 5px;
+  right: 5px;
   opacity: 0;
   display: flex;
   align-items: center;
