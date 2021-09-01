@@ -70,5 +70,5 @@ body {
   cursor: pointer;
 }
 .cancel-appear {
-  animation: cancelAppear 0.3s 1s ease-in-out forwards;
+  animation: cancelAppear 0.3s 0.5s ease-in-out forwards;
 }
