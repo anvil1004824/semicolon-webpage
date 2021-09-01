@@ -1,0 +1,65 @@
+.video-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+@keyframes popUp {
+  from {
+    width: 300px;
+    aspect-ratio: 16/9;
+  }
+  to {
+    width: 90vw;
+    aspect-ratio: 16/9;
+  }
+}
+@keyframes popDown {
+  from {
+    width: 90vw;
+    aspect-ratio: 16/9;
+  }
+  to {
+    width: 300px;
+    aspect-ratio: 16/9;
+  }
+}
+@keyframes cancelAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#semicolon-video {
+  width: 300px;
+}
+.pop-up {
+  animation: popUp 1s ease-in-out forwards;
+}
+.pop-down {
+  animation: popDown 1s ease-in-out forwards;
+}
+#cancel {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 125px;
+  right: 55px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cancel:hover {
+  cursor: pointer;
+}
+.cancel-appear {
+  animation: cancelAppear 0.3s 1s ease-in-out forwards;
+}
