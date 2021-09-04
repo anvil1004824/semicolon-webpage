@@ -3,8 +3,24 @@
 
 body {
   height: 100vh;
+}
+.all {
+  height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.all-scroll {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.box {
+  scroll-snap-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+.box:nth-child(1),
+.box:nth-child(3) {
+  background-color: black;
 }

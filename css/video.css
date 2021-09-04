@@ -1,9 +1,8 @@
 .video-box {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .video {
   z-index: 2;
@@ -104,4 +103,9 @@
 }
 .hidden {
   display: none;
+}
+.overflow-hidden {
+  touch-action: none;
+  scroll-snap-type: none;
+  overflow: hidden;
 }
