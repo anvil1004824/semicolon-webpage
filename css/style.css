@@ -2,7 +2,11 @@
 @import "video.css";
 @import "anime.css";
 @import "who.css";
+@import "act.css";
 
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
 }
