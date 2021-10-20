@@ -1,7 +1,6 @@
-const video = document.getElementById("semicolon-video");
-const cancel = document.getElementById("cancel");
-const videoCover = document.getElementById("video-cover");
-const all = document.querySelector(".all");
+const video = document.querySelector(".semicolon-video");
+const cancel = document.querySelector(".cancel");
+const videoCover = document.querySelector(".video-cover");
 
 function videoClicked() {
   video.classList.add("pop-up");
@@ -10,8 +9,7 @@ function videoClicked() {
   videoCover.classList.remove("fadeout");
   cancel.classList.add("cancel-appear");
   videoCover.classList.remove("hidden");
-  all.classList.add("overflow-hidden");
-  all.classList.remove("all-scroll");
+  backFixed();
 }
 
 function cancelClicked() {
@@ -20,8 +18,7 @@ function cancelClicked() {
   videoCover.classList.remove("fadein");
   videoCover.classList.add("fadeout");
   cancel.classList.remove("cancel-appear");
-  all.classList.remove("overflow-hidden");
-  all.classList.add("all-scroll");
+  backFlow();
   video.pause();
   video.currentTime = 0;
   setTimeout(() => {
@@ -29,6 +26,6 @@ function cancelClicked() {
   }, 500);
 }
 
-video.addEventListener("click", videoClicked);
+video.addEventListener("play", videoClicked);
 videoCover.addEventListener("click", cancelClicked);
 cancel.addEventListener("click", cancelClicked);

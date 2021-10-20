@@ -8,23 +8,39 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="all all-scroll">
-      <div class="box"></div>
+    <div class="all">
+      <div class="anime box">
+        <div class="anime__dots">
+          <div class="anime__dot"></div>
+          <div class="anime__dot">
+            <div class="anime__comma"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">활동</div>
+      <div class="who box">
+        <h1 class="who__title">WHO?</h1>
+        <img class="who__img" src="src/mojip_1.jpg" />
+        <img class="who__img" src="src/mojip_2.jpg" />
+        <img class="who__img" src="src/mojip_3.jpg" />
+        <img class="who__img" src="src/mojip_4.jpg" />
+      </div>
       <div class="video-box box">
         <div class="video">
           <video
-            id="semicolon-video"
+            class="semicolon-video"
             src="src/semicolon_video.mp4"
             controls
           ></video>
-          <div id="cancel"><i class="fas fa-times"></i></div>
+          <div class="cancel"><i class="fas fa-times"></i></div>
         </div>
-        <div id="video-cover" class="hidden"></div>
+        <div class="video-cover hidden"></div>
       </div>
-      <div class="box"></div>
-      <div class="box"></div>
     </div>
+    <script src="js/index.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/who.js"></script>
     <script
       src="https://kit.fontawesome.com/0fe7b435ac.js"
       crossorigin="anonymous"
