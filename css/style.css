@@ -1,15 +1,20 @@
 @import "reset.css";
 @import "video.css";
+@import "anime.css";
+@import "who.css";
+@import "act.css";
 
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
 }
 .all {
   height: 100vh;
   width: 100vw;
-}
-.all-scroll {
   overflow: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
@@ -20,7 +25,36 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.box:nth-child(1),
-.box:nth-child(3) {
+.box:nth-child(even) {
   background-color: black;
+}
+.overflow-hidden {
+  touch-action: none;
+  scroll-snap-type: none;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadein {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+.fadeout {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+.hidden {
+  display: none;
 }

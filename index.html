@@ -4,27 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="src/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="src/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="src/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="src/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="src/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="src/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="src/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="src/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="src/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="src/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="src/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>SEMICOLON</title>
   </head>
   <body>
-    <div class="all all-scroll">
-      <div class="box"></div>
+    <div class="all">
+      <div class="anime box">
+        <div class="anime__dots">
+          <div class="anime__dot"></div>
+          <div class="anime__dot">
+            <div class="anime__comma"></div>
+          </div>
+        </div>
+      </div>
+      <div class="act box">
+        <div class="act__programmings">
+          <div class="act__programming">
+            <span class="act__title">Kotlin</span>
+            <img class="act__img" src="src/코틀린_결과화면.png" />
+            <img class="act__img--hover" src="src/코틀린.png" />
+          </div>
+          <div class="act__programming">
+            <span class="act__title">UnityEngine(C#)</span>
+            <img class="act__img" src="src/UNITY_결과화면.png" />
+            <img class="act__img--hover" src="src/UNITY.png" />
+          </div>
+          <div class="act__programming">
+            <span class="act__title">Python</span>
+            <img class="act__img" src="src/파이썬_결과화면.png" />
+            <img class="act__img--hover" src="src/파이썬.png" />
+          </div>
+          <div class="act__programming">
+            <span class="act__title">HTML, CSS, JS</span>
+            <img class="act__img" src="src/HCJ_결과화면.png" />
+            <img class="act__img--hover" src="src/HCJ.png" />
+          </div>
+        </div>
+        <div class="act__comment">부원들의 다양한 언어 폭</div>
+      </div>
+      <div class="who box">
+        <h1 class="who__title">WHO?</h1>
+        <img class="who__img" src="src/mojip_1.jpg" />
+        <img class="who__img" src="src/mojip_2.jpg" />
+        <img class="who__img" src="src/mojip_3.jpg" />
+        <img class="who__img" src="src/mojip_4.jpg" />
+      </div>
       <div class="video-box box">
         <div class="video">
           <video
-            id="semicolon-video"
+            class="semicolon-video"
             src="src/semicolon_video.mp4"
             controls
           ></video>
-          <div id="cancel"><i class="fas fa-times"></i></div>
+          <div class="cancel"><i class="fas fa-times"></i></div>
         </div>
-        <div id="video-cover" class="hidden"></div>
+        <div class="video-cover hidden"></div>
       </div>
-      <div class="box"></div>
-      <div class="box"></div>
     </div>
+    <script src="js/index.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/who.js"></script>
     <script
       src="https://kit.fontawesome.com/0fe7b435ac.js"
       crossorigin="anonymous"
