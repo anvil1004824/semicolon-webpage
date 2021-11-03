@@ -13,7 +13,6 @@
   to {
     border-radius: 0;
     height: 200px;
-    background-color: black;
   }
 }
 @keyframes dotsMove {
@@ -22,6 +21,23 @@
   }
   to {
     transform: translateX(-60vh);
+    height: 400px;
+  }
+}
+@keyframes titleMove {
+  from {
+    left: -100vh;
+  }
+  to {
+    left: 100px;
+  }
+}
+@keyframes subtitleMove {
+  from {
+    left: -75vh;
+  }
+  to {
+    left: 100px;
   }
 }
 .anime {
@@ -30,6 +46,7 @@
   align-items: center;
 }
 .anime__dots {
+  position: relative;
   width: 100px;
   height: 400px;
   display: flex;
@@ -45,6 +62,7 @@
   background-color: black;
   border-radius: 50%;
   animation: dotToBox 1s 1s ease-in-out forwards;
+  z-index: 1;
 }
 .anime__comma {
   position: absolute;
@@ -55,4 +73,37 @@
   border-radius: 50%;
   box-shadow: 20px 0px black;
   animation: commaMove 1s 0.5s ease-in-out forwards;
+}
+.anime__title {
+  position: absolute;
+  top: 0;
+  left: -100vh;
+  background-color: black;
+  color: white;
+  animation: titleMove 1s ease-in-out forwards;
+  font-size: 140px;
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.anime__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: -75vh;
+  background-color: black;
+  color: white;
+  animation: subtitleMove 1s 0.2s ease-in-out forwards;
+  font-size: 70px;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  white-space: nowrap;
+}
+.anime__background {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  width: 100vh;
+  height: 100%;
+  background-color: white;
 }
