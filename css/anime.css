@@ -34,7 +34,7 @@
 }
 @keyframes subtitleMove {
   from {
-    left: -75vh;
+    left: -100vh;
   }
   to {
     left: 100px;
@@ -89,7 +89,7 @@
 .anime__subtitle {
   position: absolute;
   bottom: 0;
-  left: -75vh;
+  left: -100vh;
   background-color: black;
   color: white;
   animation: subtitleMove 1s 0.2s ease-in-out forwards;
